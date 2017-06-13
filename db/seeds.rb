@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Product.create(
+  name: "cat",
+  description: "hairball monster",
+  price_in_cents: 15000,
+)
+
+Product.create(
+  name: "bacon",
+  description: "#{FFaker::BaconIpsum.words}",
+  price_in_cents: 300,
+)
