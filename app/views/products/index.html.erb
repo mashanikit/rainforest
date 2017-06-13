@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+<% @Products.each do |product| %>
+  <h2><%= link_to product.name, product_path(product) %></h2>
+  <p><%= product.description %></p>
+  <p><%= product.price_in_dollars %></p>
+<% end %>

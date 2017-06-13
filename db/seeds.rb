@@ -14,6 +14,6 @@ Product.create(
 
 Product.create(
   name: "bacon",
-  description: "#{FFaker::BaconIpsum.words}",
+  description: "dead pig",
   price_in_cents: 300,
 )
