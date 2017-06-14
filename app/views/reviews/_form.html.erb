@@ -1,0 +1,10 @@
+<%= form_for(review, url: {action: "update"}) do |f| %>
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_field :text %>
+  </p>
+
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>

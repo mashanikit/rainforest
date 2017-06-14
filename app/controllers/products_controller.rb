@@ -6,6 +6,8 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    @reviews = @product.reviews
+    
   end
 
   def new
@@ -39,6 +41,7 @@ class ProductsController < ApplicationController
   redirect_to "/"
   end
 
+private
 
   def product_params
     params.require(:product).permit(:name, :description, :price_in_cents)

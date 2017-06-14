@@ -17,3 +17,13 @@ Product.create(
   description: "dead pig",
   price_in_cents: 300,
 )
+
+Review.create(
+  text: "Amazing kitty, meows a lot.",
+  product_id: 1
+)
+
+Review.create(
+  text: "Made a noise when I ate it.",
+  product_id: 2
+)
